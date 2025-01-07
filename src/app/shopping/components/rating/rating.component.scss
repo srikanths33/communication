@@ -1,0 +1,9 @@
+.stars-container {
+    display: inline-block; /* Ensures the stars are displayed inline */
+    margin-right: 5px; /* Adds some space between the stars */
+  }
+  
+  .stars-container i {
+    font-size: 24px; /* Adjust the size of the stars */
+    color: gold; /* You can adjust the color of the stars */
+  }

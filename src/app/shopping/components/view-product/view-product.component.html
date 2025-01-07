@@ -1,0 +1,11 @@
+<!-- ViewProductComponent HTML -->
+<h3 align="center">Product Details</h3>
+<div *ngIf="product && product.name" class="new">
+    <p><img src="{{product.image}}" alt="Product Image" width="20@@0px"></p>
+    <p>Name: {{ product.name }}</p>
+    <p>Price: {{ product.price }}</p>
+    <p>Rating: {{ product.rating }}
+        <app-rating [rating1]="product.rating"></app-rating>
+    </p>
+</div>
+

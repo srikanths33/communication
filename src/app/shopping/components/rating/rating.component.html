@@ -1,0 +1,26 @@
+<!-- <p><i class="fa-solid fa-star" *ngIf="rating1===5">5</i></p>
+<p><i class="fa-solid fa-star" *ngIf="rating1===4">4</i></p>
+<p><i class="fa-solid fa-star" *ngIf="rating1===3">3</i></p>
+<p><i class="fa-solid fa-star" *ngIf="rating1===2">2</i></p>
+<p><i class="fa-solid fa-star" *ngIf="rating1===1">1</i></p> -->
+<!-- <i class="fa-solid fa-star"></i> -->
+
+<!-- <div class="stars-container" *ngFor="let star of getStars(rating1)">
+    <i class="fa-solid fa-star"></i>
+  </div> -->
+
+  <!-- Child Component (view-product.component.html) -->
+<div class="stars-container">
+    <i class="fa-solid fa-star" *ngIf="rating1 >= 1"></i>
+    <i class="fa-solid fa-star" *ngIf="rating1 >= 2"></i>
+    <i class="fa-solid fa-star" *ngIf="rating1 >= 3"></i>
+    <i class="fa-solid fa-star" *ngIf="rating1 >= 4"></i>
+    <i class="fa-solid fa-star" *ngIf="rating1 >= 5"></i>
+
+    <!-- Half star if rating is decimal, e.g., 4.5 -->
+  <i class="fa-solid fa-star-half-alt" *ngIf="rating1 % 1 >= 0.5 && rating1 < 5"></i>
+
+   
+  </div>
+  
+
